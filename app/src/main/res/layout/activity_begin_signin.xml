@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/nav_header"
+    android:orientation="vertical"
+    tools:context=".Activity.BeginScreen">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@color/white_color"
+        android:elevation="5dp"
+        android:orientation="vertical">
+
+
+        <!--<ImageView
+            android:layout_width="@dimen/_125sdp"
+            android:layout_height="@dimen/_125sdp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:src="@drawable/logo" />-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:orientation="vertical">
+
+            <com.xuber_for_services.app.Utils.ClanProTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email Address"
+                android:textColor="@color/user_name"
+                android:textSize="@dimen/_11ssp" />
+
+            <com.xuber_for_services.app.Utils.ClanProEditText
+                android:id="@+id/txtemail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionNext"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:textColor="@color/btn_color"
+                android:textSize="@dimen/_12ssp" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:orientation="vertical">
+
+            <com.xuber_for_services.app.Utils.ClanProTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/password"
+                android:textColor="@color/user_name"
+                android:textSize="@dimen/_11ssp" />
+
+
+            <com.xuber_for_services.app.Utils.ClanProEditText
+                android:id="@+id/txtpassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="tap to enter password "
+                android:imeOptions="actionDone"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:textColor="@color/btn_color" />
+        </LinearLayout>
+
+        <com.xuber_for_services.app.Utils.ClanProTextView
+            android:id="@+id/lblforgotpassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/_30sdp"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:gravity="center"
+            android:text="@string/i_forgot_my_password"
+            android:textColor="@color/blue_color"
+            android:textSize="@dimen/_11ssp" />
+    </LinearLayout>
+
+    <com.xuber_for_services.app.Utils.ClanProButton
+        android:id="@+id/btnSignIn"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_above="@+id/bottom"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_30sdp"
+        android:layout_marginRight="@dimen/_30sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@drawable/rounded_button"
+        android:text="@string/login"
+        android:textColor="@color/tv_color"
+        android:textSize="@dimen/_14ssp" />
+
+    <LinearLayout
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_70sdp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/lnrRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="?actionBarSize"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <com.xuber_for_services.app.Utils.ClanProTextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:gravity="center"
+                android:text="@string/do_not_have_account"
+                android:textColor="@color/user_name"
+                android:textSize="@dimen/_12ssp" />
+
+            <com.xuber_for_services.app.Utils.ClanProTextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:gravity="center"
+                android:text="@string/sign_up"
+                android:textColor="@color/blue_color"
+                android:textSize="@dimen/_14ssp" />
+
+            <com.xuber_for_services.app.Utils.ClanProTextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/here"
+                android:textColor="@color/user_name"
+                android:textSize="@dimen/_12ssp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

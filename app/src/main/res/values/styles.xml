@@ -1,0 +1,193 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@android:color/transparent</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="buttonStyle">@style/MyPrimaryButton</item>
+        <item name="android:textViewStyle">@style/MyTextViewStyle</item>
+        <!--<item name="editTextStyle">@style/MyEditTextStyle</item>-->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/windowBackgroundColor</item>
+        <item name="android:progressBarStyleHorizontal">@style/progressIndicatorStyle</item>
+    </style>
+
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/windowBackgroundColor</item>
+    </style>
+
+    <style name="AppTheme.Light" parent="Theme.AppCompat.Light">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="android:windowBackground">@color/windowBackgroundColor</item>
+    </style>
+
+    <style parent="@android:style/Widget.Button" name="MyPrimaryButton">
+        <item name="android:textColor">@color/btn_text_color</item>
+        <item name="android:background">@color/btn_color</item>
+        <item name="android:fontFamily">fonts/ClanPro-Medium.otf</item>
+    </style>
+
+    <style parent="android:Widget.TextView" name="MyTextViewStyle">
+        <item name="android:textColor">@color/tv_color</item>
+        <item name="android:textSize">18dp</item>
+        <item name="android:fontFamily">fonts/ClanPro-Medium.otf</item>
+    </style>
+
+   <!-- <style parent="android:Widget.EditText" name="MyEditTextStyle">
+        <item name="android:textColor">@color/btn_color</item>
+        &lt;!&ndash;<item name="colorControlNormal">#1b419b</item>&ndash;&gt;
+        <item name="android:background">@null</item>
+        <item name="android:textCursorDrawable">@null</item>
+        <item name="android:cursorVisible">true</item>
+
+    </style>-->
+
+    <style name="progressIndicatorStyle">
+        <item name="android:indeterminate">true</item>
+        <item name="android:indeterminateDuration">1500</item>
+        <item name="android:indeterminateOnly">true</item>
+        <item name="android:minHeight">16dip</item>
+        <item name="android:maxHeight">16dip</item>
+    </style>
+
+    <style name="Toolbar" parent="Theme.AppCompat.Light">
+        <item name="android:textColorSecondary">@android:color/white</item>
+        <item name="actionMenuTextColor">@android:color/white</item>
+    </style>
+
+    <style name="MyAlertDialogStyle" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:layout_height">match_parent</item>
+        <item name="colorAccent">@color/colorPrimary</item>
+    </style>
+
+    <style name="MyTitleTextStyle">
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textAppearance">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="Transparent" parent="android:Theme.Light">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <!-- Base application theme. -->
+    <style name="Mytheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="android:textAppearance">@color/colorPrimaryDark</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="android:windowBackground">@color/white</item>
+        <item name="colorAccent">@color/white</item>
+        <item name="colorControlNormal">#c5c5c5 </item>
+        <item name="colorControlActivated">@color/colorPrimaryDark</item>
+        <item name="colorControlHighlight">@color/colorAccent</item>
+        <item name="android:textColorPrimary">@color/colorPrimaryDark</item>
+
+    </style>
+
+    <style name="RatingBar" parent="Theme.AppCompat">
+        <item name="colorControlNormal">@color/offline</item>
+        <item name="colorControlActivated">@color/colorPrimary</item>
+    </style>
+
+    <style name="MyDialogTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <!--buttons color-->
+        <item name="colorAccent">#421</item>
+        <!--title and message color-->
+        <item name="android:textColorPrimary">@android:color/holo_blue_light</item>
+        <!--dialog background-->
+        <item name="android:windowBackground">@android:color/white</item>
+    </style>
+
+    <style name="NavigationDrawerStyle">
+        <item name="android:textSize">20sp</item><!-- text size in menu-->
+        <item name="android:listPreferredItemHeightSmall">60dp</item><!-- item size in menu-->
+        <item name="android:fontFamily">fonts/ClanPro-NarrBook.otf</item>
+        <item name="colorAccent">#f00</item>
+        <!--<item name="colorControlHighlight">@android:color/white</item>-->
+    </style>
+
+    <style name="Custom" parent="android:Theme.DeviceDefault.Dialog">
+        <item name="DialogTitleAppearance">@android:style/TextAppearance.Medium</item>
+        <item name="DialogTitleText">Loading…</item>
+        <item name="DialogSpotColor">@color/spots_dialog_color</item>
+        <item name="DialogSpotCount">4</item>
+    </style>
+
+    <style name="Theme.App.Base" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorControlNormal">#c5c5c5</item>
+        <item name="colorControlActivated">@color/colorAccent</item>
+        <item name="colorControlHighlight">@color/colorAccent</item>
+    </style>
+
+    <style name="textForStyle">
+        <item name="android:fontFamily">fonts/Bariol_Bold.otf</item>
+        <item name="android:typeface">monospace</item>
+    </style>
+
+    <style name="textStyle" parent="@android:style/Widget.Button">
+        <item name="android:fontFamily">fonts/Bariol_Bold.otf</item>
+    </style>
+
+    <style name="StyledTextInputLayoutTheme" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/tv_color</item>
+        <item name="android:textColorHint">@color/black</item>
+        <item name="android:colorActivatedHighlight">@color/chat_text</item>
+    </style>
+
+    <style name="StyleEditTextTheme">
+        <item name="android:textColorPrimary">@color/colorPrimary</item>
+        <item name="android:textColor">@color/tv_color</item>
+    </style>
+
+    <style name="CommentsDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowAnimationStyle">@style/CommentsDialogAnimation</item>
+    </style>
+
+    <style name="CommentsDialogAnimation">
+        <item name="android:windowEnterAnimation">@android:anim/bounce_interpolator</item>
+        <item name="android:windowExitAnimation">@android:anim/slide_out_right</item>
+    </style>
+
+    <style name="MyCardFormStyle" parent="@android:style/Widget.EditText">
+        <item name="colorAccent">#0f0</item>
+
+        <item name="android:windowBackground">@color/background_material_dark</item>
+        <item name="android:colorForeground">@color/foreground_material_dark</item>
+        <item name="android:colorForegroundInverse">@color/foreground_material_light</item>
+        <item name="android:colorBackground">@color/background_material_dark</item>
+        <item name="android:colorBackgroundCacheHint">@color/abc_background_cache_hint_selector_material_dark</item>
+
+        <item name="android:textColorPrimary">#000</item>
+        <item name="android:textColor">#000</item>
+        <item name="android:textCursorDrawable">@null</item>
+        <item name="android:textColorPrimaryInverse">@color/abc_primary_text_material_light</item>
+        <item name="android:textColorPrimaryDisableOnly">@color/abc_primary_text_disable_only_material_dark</item>
+        <item name="android:textColorSecondary">@color/abc_secondary_text_material_dark</item>
+        <item name="android:textColorSecondaryInverse">@color/abc_secondary_text_material_light</item>
+        <item name="android:textColorTertiary">@color/abc_secondary_text_material_dark</item>
+        <item name="android:textColorTertiaryInverse">@color/abc_secondary_text_material_light</item>
+        <item name="android:textColorHint">@color/bright_foreground_disabled_material_dark</item>
+        <item name="android:textColorHintInverse">@color/bright_foreground_disabled_material_light</item>
+        <item name="android:textColorHighlight">@color/highlighted_text_material_dark</item>
+
+        <item name="colorControlNormal">?android:attr/textColorSecondary</item>
+        <item name="colorControlHighlight">@color/ripple_material_dark</item>
+        <item name="colorButtonNormal">@color/button_material_dark</item>
+        <item name="colorSwitchThumbNormal">@color/switch_thumb_material_dark</item>
+    </style>
+
+</resources>

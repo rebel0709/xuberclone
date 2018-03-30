@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/_5sdp"
+    tools:ignore="UseCompoundDrawables">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/service_image_icon"
+        android:layout_width="@dimen/_70sdp"
+        android:src="@drawable/check_tick"
+        android:background="@android:color/white"
+        android:layout_height="@dimen/_70sdp"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/select"
+        android:layout_width="30dp"
+        android:src="@drawable/check_tick"
+        android:layout_below="@+id/service_image_icon"
+        android:contentDescription="@string/app_name"
+        android:layout_toRightOf="@+id/service_image_icon"
+        android:layout_marginTop="-40dp"
+        android:layout_marginLeft="-40dp"
+        android:visibility="gone"
+        android:layout_height="30dp" />
+
+    <com.xuber_for_services.app.Utils.ClanProTextView
+        android:id="@+id/service_list_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/service_image_icon"
+        android:textColor="@color/tv_normal_color"
+        android:textSize="@dimen/_13sdp"
+        tools:ignore="RtlHardcoded" />
+
+    <com.xuber_for_services.app.Utils.ClanProTextView
+        android:id="@+id/service_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/service_list_name"
+        android:textColor="@color/tv_normal_color"
+        android:textSize="@dimen/_9sdp"
+        tools:ignore="RtlHardcoded" />
+
+</RelativeLayout>

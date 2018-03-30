@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="MyAlertDialogStyleHolo" parent="@android:style/Theme.Holo.Light.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="colorAccent">@color/colorPrimary</item>
+        <item name="android:windowTitleStyle">@style/MyTitleTextStyle</item>
+    </style>
+
+    <style name="MyTitleTextStyle">
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textAppearance">@color/colorPrimaryDark</item>
+        <item name="android:fontFamily">fonts/ClanPro-Medium.otf</item>
+    </style>
+
+    <style name="Transparent" parent="android:Theme.Light">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <style name="progressIndicatorStyle">
+        <item name="android:indeterminate">true</item>
+        <item name="android:indeterminateDuration">1500</item>
+        <item name="android:indeterminateOnly">true</item>
+        <item name="android:minHeight">16dip</item>
+        <item name="android:maxHeight">16dip</item>
+    </style>
+
+    <style name="RatingBar" parent="Base.Widget.AppCompat.RatingBar.Small">
+        <item name="colorControlNormal">@color/dustYellow</item>
+        <item name="colorControlActivated">@color/offline</item>
+    </style>
+
+    <style name="Custom" parent="android:Theme.DeviceDefault.Dialog">
+        <item name="DialogTitleAppearance">@android:style/TextAppearance.Medium</item>
+        <item name="DialogTitleText">Loading…</item>
+        <item name="DialogSpotColor">@color/spots_dialog_color</item>
+        <item name="DialogSpotCount">4</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/windowBackgroundColor</item>
+        <item name="android:navigationBarColor">@color/black</item>
+    </style>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="buttonStyle">@style/MyPrimaryButton</item>
+        <item name="android:textViewStyle">@style/MyTextViewStyle</item>
+        <!--<item name="editTextStyle">@style/MyEditTextStyle</item>-->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/windowBackgroundColor</item>
+        <item name="android:progressBarStyleHorizontal">@style/progressIndicatorStyle</item>
+        <item name="android:navigationBarColor">@color/black</item>
+    </style>
+</resources>

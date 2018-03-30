@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ffffff</color>
+    <color name="colorPrimaryHome">#ffffff</color>
+    <color name="colorPrimaryDark">#ffffff</color>
+    <color name="colorAccent">#000000</color>
+    <color name="windowBackgroundColor">#f4f5f9</color>
+
+
+    <color name="tv_normal_color">#000000</color>
+    <color name="nav_bg_color">#2B303D</color>
+    <color name="nav_bar_color">#05050d</color>
+    <color name="tv_color">#fff</color>
+    <color name="bg_et_color">#FFF6F6F6</color>
+    <color name="bottom_sheet_bg_color">#FFFFFF</color>
+
+    <!--Signin-->
+    <color name="btn_color">#000000</color>
+    <color name="btn_color_blue">#00b9e1</color>
+    <color name="btn_text_color">#FFFFFF</color>
+    <color name="bg_signin_color">#FF2C323E</color>
+    <color name="bg_layout_color">#FFFFFF</color>
+    <color name="light_white">#F7F7F7</color>
+    <color name="chat_text">#9FA5B2</color>
+    <color name="black">#000000</color>
+    <color name="mild_black">#767171</color>
+    <color name="white">#FFFFFF</color>
+    <color name="view_not_chat">#EC6B76</color>
+    <color name="view_chat">#000000</color>
+    <color name="offline">#D2D2D2</color>
+    <color name="transparent">#FFFFFFFF</color>
+    <color name="edit_bg">#EDEDED</color>
+
+    <!--Service List-->
+    <color name="text_bg_trans_color">#aa2c323e</color>
+    <color name="dustYellow">#ffd700</color>
+
+    <!--Spot Dialog Dot Color-->
+    <color name="spots_dialog_color">@color/tv_color</color>
+
+    <!--Navigation Header-->
+
+    <color name="nav_header">#f6f6f6</color>
+
+    <!--SignIn-->
+
+    <color name="user_name">#B0B0B0</color>
+
+    <color name="blue_color">#00b9e1</color>
+    <color name="white_color">#ffffff</color>
+</resources>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/header_root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_170sdp"
+    android:background="@color/nav_header"
+    android:elevation="@dimen/_1sdp"
+    android:gravity="center"
+    android:paddingBottom="@dimen/_10sdp"
+    android:paddingTop="@dimen/_10sdp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/circleView"
+        android:layout_width="@dimen/_80sdp"
+        android:layout_height="@dimen/_80sdp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:background="@color/nav_header"
+        android:src="@drawable/ic_dummy_user" />
+
+    <com.xuber_for_services.app.Utils.ClanProTextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/circleView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/_16ssp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

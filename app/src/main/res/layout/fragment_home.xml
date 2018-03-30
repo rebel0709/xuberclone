@@ -1,0 +1,56 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/nav_header">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"
+        />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        />
+
+    <ProgressBar
+        android:id="@+id/pbar"
+        style="@style/progressIndicatorStyle"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/error_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/reload_img"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="19dp"
+            android:tint="@color/colorPrimary"
+            android:src="@drawable/ic_reload"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <com.xuber_for_services.app.Utils.ClanProTextView
+            android:id="@+id/statusTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/reload_img"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:text="@string/empty_home_category"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/_16sdp" />
+    </RelativeLayout>
+
+</RelativeLayout>
